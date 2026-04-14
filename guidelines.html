@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Medi360 — Brand Guidelines</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://use.typekit.net/fbo3icq.css" rel="stylesheet"/>
+<style>
+  .font-marlet {
+    font-family: 'pf-marlet-display', serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+  }
+  .font-myriad {
+    font-family: 'myriad-pro', 'Work Sans', sans-serif;
+  }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  html { scroll-behavior: smooth; }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #5a6373;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  .nav-link:hover { background: #e5e8eb; color: #0E2757; }
+  .nav-link.active { color: #0E2757; font-weight: 700; border-right: 3px solid #C0F968; background: #edf1f7; }
+  .section-divider { height: 1px; background: #e5e8eb; opacity: 0.5; margin: 0 2rem; }
+  .color-chip {
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14rem;
+  }
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0E2757;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .download-btn:hover { opacity: 0.6; }
+  .logo-card {
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    padding: 2.5rem;
+  }
+  .logo-card img { max-width: 180px; height: auto; object-fit: contain; }
+  .do-dont-item { padding: 1.25rem; border-radius: 0.5rem; }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.375rem 1rem;
+    border-radius: 9999px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    background: rgba(192, 249, 104, 0.2);
+    color: #0E2757;
+  }
+</style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary":            "#0E2757",
+          "primary-dark":       "#001338",
+          "secondary-container":"#C0F968",
+          "secondary":          "#456800",
+          "surface":            "#F7FAFD",
+          "surface-low":        "#F1F4F7",
+          "surface-high":       "#E5E8EB",
+          "on-surface":         "#181C1E",
+          "on-surface-variant": "#44464F",
+          "teal-support":       "#00475D",
+          "electric":           "#0344F2",
+          "light-blue":         "#9BC0FA",
+          "soft-mint":          "#C6E5DE",
+        },
+        fontFamily: {
+          "headline": ["Ubuntu", "sans-serif"],
+          "body":     ["myriad-pro", "Work Sans", "sans-serif"],
+          "label":    ["myriad-pro", "Work Sans", "sans-serif"],
+        },
+      },
+    },
+  }
+</script>
+</head>
+
+<body class="bg-surface font-body text-on-surface">
+<div class="flex min-h-screen">
+
+  <!-- Sidebar -->
+  <aside class="hidden md:flex flex-col h-screen w-60 sticky top-0 bg-surface-low flex-shrink-0 py-8 px-3">
+    <div class="px-3 mb-8">
+      <div class="font-ubuntu font-medium text-lg text-primary tracking-tight">Brand System</div>
+      <div class="font-ubuntu text-xs text-on-surface-variant opacity-60 tracking-widest mt-0.5">v1.0 — 2026</div>
+    </div>
+    <nav class="space-y-1 flex-1">
+      <a class="nav-link active" href="#identity">
+        <span class="material-symbols-outlined text-lg">fingerprint</span> Identity
+      </a>
+      <a class="nav-link" href="#downloads">
+        <span class="material-symbols-outlined text-lg">download</span> Logo Downloads
+      </a>
+      <a class="nav-link" href="#typography">
+        <span class="material-symbols-outlined text-lg">font_download</span> Typography
+      </a>
+      <a class="nav-link" href="#colors">
+        <span class="material-symbols-outlined text-lg">palette</span> Color Palette
+      </a>
+      <a class="nav-link" href="#imagery">
+        <span class="material-symbols-outlined text-lg">image</span> Imagery
+      </a>
+      <a class="nav-link" href="#principles">
+        <span class="material-symbols-outlined text-lg">architecture</span> Principles
+      </a>
+      <a class="nav-link" href="#components">
+        <span class="material-symbols-outlined text-lg">category</span> Components
+      </a>
+    </nav>
+    <div class="px-3 pb-2">
+      <div class="bg-primary rounded-xl p-4">
+        <div class="text-white text-xs opacity-50 tracking-wider mb-1">Brand Document</div>
+        <div class="text-secondary-container font-ubuntu font-medium text-sm">Medi360</div>
+        <div class="text-white text-xs opacity-40 mt-0.5">Shaping Clinics</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="flex-1 min-w-0">
+
+    <!-- Top nav -->
+    <header class="sticky top-0 z-30 bg-surface flex items-center justify-between px-8 py-4" style="border-bottom: 1px solid rgba(229,232,235,0.6)">
+      <img src="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" alt="Medi360" class="h-10 w-auto"/>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a class="font-ubuntu font-medium text-sm text-primary border-b-2 border-secondary-container pb-0.5" href="#identity">Guidelines</a>
+        <a class="font-ubuntu font-medium text-sm text-on-surface-variant hover:text-primary transition-colors" href="#imagery">Imagery</a>
+        <a class="font-ubuntu font-medium text-sm text-on-surface-variant hover:text-primary transition-colors" href="#downloads">Assets</a>
+        <a class="font-ubuntu font-medium text-sm text-on-surface-variant hover:text-primary transition-colors" href="#components">Components</a>
+      </nav>
+      <a href="#downloads" class="bg-primary text-white px-5 py-2 rounded-md font-ubuntu font-medium text-sm hover:opacity-90 transition-all">
+        Download Assets
+      </a>
+    </header>
+
+    <main class="no-scrollbar">
+
+      <!-- ── HERO ─────────────────────────────────────────────── -->
+      <section class="px-8 py-24 bg-surface-low" id="identity">
+        <div class="max-w-5xl mx-auto">
+          <p class="font-ubuntu text-xs font-medium tracking-[0.25em] text-secondary mb-6 uppercase">Brand Guidelines</p>
+          <h1 class="font-ubuntu font-medium text-7xl lg:text-8xl text-primary leading-none mb-4">
+            Clinical<br>Authority.
+          </h1>
+          <p class="font-marlet text-3xl text-[#00475D] mb-8">The Precision Architect</p>
+          <p class="font-myriad text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            A visual framework for Medi360 — balancing operational authority with a forward-moving consulting identity. Every element is chosen for precision. Nothing is decorative.
+          </p>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ── LOGO IDENTITY ──────────────────────────────────────── -->
+      <section class="px-8 py-20 bg-surface">
+        <div class="max-w-5xl mx-auto">
+          <div class="flex flex-col lg:flex-row gap-16 items-start">
+            <div class="lg:w-72 flex-shrink-0">
+              <h2 class="font-ubuntu font-normal text-5xl text-primary mb-2">Logo Identity</h2>
+              <p class="font-marlet text-xl text-[#00475D] mb-6">The visual anchor of our presence.</p>
+              <p class="font-myriad text-base text-on-surface-variant leading-relaxed mb-8">
+                The lowercase "medi" signals human accessibility. The "360" anchors a holistic, full-service perspective. Together they form a mark that is clinical without being cold.
+              </p>
+              <div>
+                <p class="font-ubuntu font-medium text-xs tracking-[0.2em] text-primary uppercase mb-3">Usage Rules</p>
+                <ul class="space-y-2 font-myriad text-sm text-on-surface-variant">
+                  <li class="flex items-start gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1.5 flex-shrink-0"></span>
+                    Maintain minimum clear space of 1x the mark height on all sides
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1.5 flex-shrink-0"></span>
+                    Never rearrange, stretch, or recolour elements independently
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1.5 flex-shrink-0"></span>
+                    Use the correct contrast variant for each background
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1.5 flex-shrink-0"></span>
+                    Minimum reproduction size: 80px width for digital, 20mm for print
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- White bg -->
+              <div>
+                <div class="logo-card bg-white" style="border: 1px solid #e5e8eb;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" alt="Medi360 Primary Vertical Stack — White Background"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <div>
+                    <p class="font-ubuntu font-medium text-xs text-primary">Standard Light</p>
+                    <p class="font-myriad text-xs text-on-surface-variant opacity-60">White or off-white surfaces</p>
+                  </div>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <!-- Dark bg -->
+              <div>
+                <div class="logo-card" style="background:#000000;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" alt="Medi360 Primary Vertical Stack — Dark Background"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <div>
+                    <p class="font-ubuntu font-medium text-xs text-primary">Reverse Dark</p>
+                    <p class="font-myriad text-xs text-on-surface-variant opacity-60">Black surfaces</p>
+                  </div>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <!-- Horizontal white -->
+              <div>
+                <div class="logo-card bg-surface-low">
+                  <img src="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" alt="Medi360 Secondary Horizontal Stack — Light Background"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <div>
+                    <p class="font-ubuntu font-medium text-xs text-primary">Horizontal Light</p>
+                    <p class="font-myriad text-xs text-on-surface-variant opacity-60">Headers, banners, tight spaces</p>
+                  </div>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <!-- No mark -->
+              <div>
+                <div class="logo-card bg-surface-low">
+                  <img src="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20%CE%96No%20Mark.svg" alt="Medi360 Wordmark Only"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <div>
+                    <p class="font-ubuntu font-medium text-xs text-primary">Wordmark Only</p>
+                    <p class="font-myriad text-xs text-on-surface-variant opacity-60">Space-constrained applications</p>
+                  </div>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20%CE%96No%20Mark.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ── LOGO DOWNLOADS ─────────────────────────────────────── -->
+      <section class="px-8 py-20 bg-surface-low" id="downloads">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="font-ubuntu font-normal text-5xl text-primary mb-2">Logo Downloads</h2>
+          <p class="font-marlet text-xl text-[#00475D] mb-12">All variants. All backgrounds. SVG format.</p>
+
+          <!-- White background set -->
+          <div class="mb-14">
+            <p class="font-ubuntu font-medium text-xs tracking-[0.2em] text-primary uppercase mb-6">01 — White Background</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <div class="logo-card bg-white" style="border: 1px solid #e5e8eb;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" alt="Primary Vertical Stack"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Primary Vertical Stack</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="logo-card bg-white" style="border: 1px solid #e5e8eb;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" alt="Secondary Horizontal Stack"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Secondary Horizontal Stack</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="logo-card bg-white" style="border: 1px solid #e5e8eb;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20%CE%96No%20Mark.svg" alt="No Mark"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Wordmark Only</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/01_Medi360%20Logo%20%CE%96No%20Mark.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Black/Dark background set -->
+          <div class="mb-14">
+            <p class="font-ubuntu font-medium text-xs tracking-[0.2em] text-primary uppercase mb-6">02 — Dark Background</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <div class="logo-card" style="background:#000000;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" alt="Primary Vertical Stack Dark"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Primary Vertical Stack</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="logo-card" style="background:#000000;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" alt="Secondary Horizontal Stack Dark"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Secondary Horizontal Stack</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="logo-card" style="background:#000000;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20%CE%96No%20Mark.svg" alt="No Mark Dark"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Wordmark Only</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/02_Medi360%20Logo%20%CE%96No%20Mark.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blue background set -->
+          <div>
+            <p class="font-ubuntu font-medium text-xs tracking-[0.2em] text-primary uppercase mb-6">03 — Blue Background</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <div class="logo-card" style="background:#0000FF;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/03_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" alt="Primary Vertical Stack Blue"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Primary Vertical Stack</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/03_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="logo-card" style="background:#0000FF;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/03_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" alt="Secondary Horizontal Stack Blue"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Secondary Horizontal Stack</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/03_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="logo-card" style="background:#0000FF;">
+                  <img src="https://leonidaslemon-del.github.io/medi360/03_Medi360%20Logo%20%CE%96No%20Mark.svg" alt="No Mark Blue"/>
+                </div>
+                <div class="flex justify-between items-center mt-3 px-1">
+                  <p class="font-myriad text-xs text-on-surface-variant">Wordmark Only</p>
+                  <a class="download-btn" href="https://leonidaslemon-del.github.io/medi360/03_Medi360%20Logo%20%CE%96No%20Mark.svg" target="_blank">
+                    <span class="material-symbols-outlined text-base">download</span> SVG
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ── TYPOGRAPHY ─────────────────────────────────────────── -->
+      <section class="px-8 py-20 bg-surface" id="typography">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="font-ubuntu font-normal text-5xl text-primary mb-2">Typographic Hierarchy</h2>
+          <p class="font-marlet text-2xl text-[#0344F2] mb-4">Balancing clinical rigour with editorial elegance.</p>
+          <div class="h-1 w-20 bg-secondary-container mb-16"></div>
+
+          <div class="space-y-16">
+            <!-- Primary Headlines -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+              <div class="lg:col-span-4">
+                <p class="font-ubuntu font-medium text-xs tracking-widest text-secondary uppercase mb-3">Primary Headlines</p>
+                <p class="font-ubuntu text-base text-on-surface-variant">Ubuntu Regular / Bold</p>
+                <p class="font-myriad text-sm text-on-surface-variant opacity-60 mt-1">Titles, page headers, display copy</p>
+              </div>
+              <div class="lg:col-span-8">
+                <h3 class="font-ubuntu text-6xl lg:text-7xl text-primary leading-none">System Authority</h3>
+              </div>
+            </div>
+
+            <!-- Editorial -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-12" style="border-top: 1px solid rgba(229,232,235,0.5)">
+              <div class="lg:col-span-4">
+                <p class="font-ubuntu font-medium text-xs tracking-widest text-secondary uppercase mb-3">Editorial Sub-headlines</p>
+                <p class="font-marlet text-base text-on-surface-variant">PF Marlet Display Medium</p>
+                <p class="font-myriad text-sm text-on-surface-variant opacity-60 mt-1">Section leads, pull quotes, brand statements</p>
+              </div>
+              <div class="lg:col-span-8 space-y-3">
+                <p class="font-marlet text-5xl text-primary leading-tight">"Precision is the architecture of trust."</p>
+                <p class="font-marlet text-2xl text-[#00475D]">The visual anchor of clinical consulting.</p>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-12" style="border-top: 1px solid rgba(229,232,235,0.5)">
+              <div class="lg:col-span-4">
+                <p class="font-ubuntu font-medium text-xs tracking-widest text-secondary uppercase mb-3">Body Copy</p>
+                <p class="font-myriad text-base text-on-surface-variant">Myriad Pro Regular</p>
+                <p class="font-myriad text-sm text-on-surface-variant opacity-60 mt-1">All long-form content, labels, UI text</p>
+              </div>
+              <div class="lg:col-span-8">
+                <p class="font-myriad text-lg text-on-surface leading-loose max-w-xl">
+                  Clarity is the foundation of our communication. Myriad Pro provides a neutral, professional tone that holds legibility across digital and print. Minimum line height 1.6. Left-aligned for all long-form content.
+                </p>
+              </div>
+            </div>
+
+            <!-- Scale reference -->
+            <div class="bg-surface-low rounded-2xl p-8 pt-10" style="border-top: 1px solid rgba(229,232,235,0.5)">
+              <p class="font-ubuntu font-medium text-xs tracking-widest text-secondary uppercase mb-8">Type Scale Reference</p>
+              <div class="space-y-4">
+                <div class="flex items-baseline gap-6">
+                  <span class="font-ubuntu text-xs text-on-surface-variant w-24 flex-shrink-0">Display — 80px</span>
+                  <span class="font-ubuntu text-5xl text-primary leading-none" style="font-weight:400;">medi360</span>
+                </div>
+                <div class="flex items-baseline gap-6">
+                  <span class="font-ubuntu text-xs text-on-surface-variant w-24 flex-shrink-0">H1 — 48px</span>
+                  <span class="font-ubuntu text-4xl text-primary" style="font-weight:400;">Shaping Clinics</span>
+                </div>
+                <div class="flex items-baseline gap-6">
+                  <span class="font-ubuntu text-xs text-on-surface-variant w-24 flex-shrink-0">H2 — 36px</span>
+                  <span class="font-ubuntu text-3xl text-primary" style="font-weight:400;">Staff Recruitment</span>
+                </div>
+                <div class="flex items-baseline gap-6">
+                  <span class="font-ubuntu text-xs text-on-surface-variant w-24 flex-shrink-0">Lead — 24px</span>
+                  <span class="font-marlet text-2xl text-[#00475D]">The operational arc of a clinic.</span>
+                </div>
+                <div class="flex items-baseline gap-6">
+                  <span class="font-ubuntu text-xs text-on-surface-variant w-24 flex-shrink-0">Body — 16px</span>
+                  <span class="font-myriad text-base text-on-surface">We connect healthcare professionals with the clinics that need them.</span>
+                </div>
+                <div class="flex items-baseline gap-6">
+                  <span class="font-ubuntu text-xs text-on-surface-variant w-24 flex-shrink-0">Label — 12px</span>
+                  <span class="font-ubuntu text-xs text-on-surface-variant tracking-widest uppercase">Clinical Recruitment — Athens</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Font Resources -->
+          <div class="mt-16 pt-12" style="border-top: 1px solid rgba(229,232,235,0.5)">
+            <p class="font-ubuntu text-xs font-medium tracking-[0.2em] text-primary uppercase mb-8">Font Resources</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              <!-- Adobe Fonts / Typekit -->
+              <div class="bg-surface-low rounded-2xl p-8">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <p class="font-ubuntu font-medium text-base text-primary">PF Marlet Display + Myriad Pro</p>
+                    <p class="font-myriad text-sm text-on-surface-variant mt-0.5">Adobe Fonts — Typekit Web Project</p>
+                  </div>
+                  <a href="https://fonts.adobe.com" target="_blank" class="font-ubuntu text-xs font-medium text-[#0344F2] hover:opacity-70 transition-opacity tracking-wide">Adobe Fonts ↗</a>
+                </div>
+                <p class="font-myriad text-sm text-on-surface-variant leading-relaxed mb-6">Embed this kit in your project's <code class="font-mono text-xs bg-surface-high px-1.5 py-0.5 rounded text-primary">&lt;head&gt;</code> to load both typefaces.</p>
+                <div class="bg-primary rounded-xl p-4 relative group">
+                  <p class="font-mono text-xs text-secondary-container leading-relaxed break-all">&lt;link rel="stylesheet"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;href="https://use.typekit.net/fbo3icq.css"&gt;</p>
+                  <button onclick="navigator.clipboard.writeText('<link rel=\"stylesheet\" href=\"https://use.typekit.net/fbo3icq.css\">')" class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/10 hover:bg-white/20 rounded px-2 py-1 font-ubuntu text-xs text-white">Copy</button>
+                </div>
+                <p class="font-myriad text-xs text-on-surface-variant opacity-60 mt-3">Kit ID: <span class="font-mono">fbo3icq</span> — access requires Adobe Fonts subscription</p>
+              </div>
+
+              <!-- Ubuntu / Google Fonts -->
+              <div class="bg-surface-low rounded-2xl p-8">
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <p class="font-ubuntu font-medium text-base text-primary">Ubuntu</p>
+                    <p class="font-myriad text-sm text-on-surface-variant mt-0.5">Google Fonts — Free</p>
+                  </div>
+                  <a href="https://fonts.google.com/specimen/Ubuntu" target="_blank" class="font-ubuntu text-xs font-medium text-[#0344F2] hover:opacity-70 transition-opacity tracking-wide">Google Fonts ↗</a>
+                </div>
+                <p class="font-myriad text-sm text-on-surface-variant leading-relaxed mb-6">Add to your project's <code class="font-mono text-xs bg-surface-high px-1.5 py-0.5 rounded text-primary">&lt;head&gt;</code>. Weights 300, 400, 500, 700 included.</p>
+                <div class="bg-primary rounded-xl p-4 relative group">
+                  <p class="font-mono text-xs text-secondary-container leading-relaxed break-all">&lt;link href="https://fonts.googleapis.com/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;css2?family=Ubuntu:wght@<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;300;400;500;700&display=swap"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rel="stylesheet"&gt;</p>
+                  <button onclick="navigator.clipboard.writeText('<link href=\"https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap\" rel=\"stylesheet\">')" class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/10 hover:bg-white/20 rounded px-2 py-1 font-ubuntu text-xs text-white">Copy</button>
+                </div>
+                <p class="font-myriad text-xs text-on-surface-variant opacity-60 mt-3">CSS: <span class="font-mono">font-family: 'Ubuntu', sans-serif;</span></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ── COLOR PALETTE ──────────────────────────────────────── -->
+      <section class="px-8 py-20 bg-surface-low" id="colors">
+        <div class="max-w-5xl mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div>
+              <h2 class="font-ubuntu font-normal text-5xl text-primary mb-2">Color Palette</h2>
+              <p class="font-marlet text-2xl text-[#00475D]">Harmonising authority with organic growth.</p>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-primary"></div>
+                <span class="font-ubuntu text-xs text-on-surface-variant">Authority</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+                <span class="font-ubuntu text-xs text-on-surface-variant">Growth</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Primary — spans 2 cols -->
+            <div class="col-span-2 color-chip" style="background:#0E2757;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-white opacity-50">Midnight Blue</span>
+                <h4 class="font-ubuntu text-2xl text-white mt-1">Authority Core</h4>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="font-mono text-base text-white">#0E2757</span>
+                <span class="font-ubuntu text-xs text-white opacity-50">Brand Primary</span>
+              </div>
+            </div>
+            <!-- Neon Green -->
+            <div class="col-span-2 color-chip" style="background:#C0F968;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-[#0E2757] opacity-60">Neon Green</span>
+                <h4 class="font-ubuntu text-2xl text-[#0E2757] mt-1">Active Pulse</h4>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="font-mono text-base text-[#0E2757]">#C0F968</span>
+                <span class="font-ubuntu text-xs text-[#0E2757] opacity-60">Conversion Lead</span>
+              </div>
+            </div>
+            <!-- Light Blue -->
+            <div class="color-chip" style="background:#9BC0FA;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-[#0E2757] opacity-60">Light Blue</span>
+                <h4 class="font-ubuntu text-xl text-[#0E2757] mt-1">Clear Sky</h4>
+              </div>
+              <span class="font-mono text-sm text-[#0E2757]">#9BC0FA</span>
+            </div>
+            <!-- Soft Mint -->
+            <div class="color-chip" style="background:#C6E5DE;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-[#0E2757] opacity-60">Soft Mint</span>
+                <h4 class="font-ubuntu text-xl text-[#0E2757] mt-1">Structural Shade</h4>
+              </div>
+              <span class="font-mono text-sm text-[#0E2757]">#C6E5DE</span>
+            </div>
+            <!-- Teal Support -->
+            <div class="color-chip" style="background:#00475D;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-white opacity-50">Dark Teal</span>
+                <h4 class="font-ubuntu text-xl text-white mt-1">Midnight Support</h4>
+              </div>
+              <span class="font-mono text-sm text-white">#00475D</span>
+            </div>
+            <!-- Electric Blue -->
+            <div class="color-chip" style="background:#0344F2;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-white opacity-50">Electric Blue</span>
+                <h4 class="font-ubuntu text-xl text-white mt-1">Action Glow</h4>
+              </div>
+              <span class="font-mono text-sm text-white">#0344F2</span>
+            </div>
+            <!-- Surface -->
+            <div class="color-chip col-span-1" style="background:#F1F4F7; border: 1px solid #e5e8eb;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-[#0E2757] opacity-50">Surface Low</span>
+                <h4 class="font-ubuntu text-xl text-[#0E2757] mt-1">Canvas Base</h4>
+              </div>
+              <span class="font-mono text-sm text-[#0E2757]">#F1F4F7</span>
+            </div>
+            <!-- Ghost White -->
+            <div class="color-chip col-span-1" style="background:#F7FAFD; border: 1px solid #e5e8eb;">
+              <div>
+                <span class="font-ubuntu text-xs tracking-[0.2em] text-[#0E2757] opacity-50">Surface</span>
+                <h4 class="font-ubuntu text-xl text-[#0E2757] mt-1">Ghost White</h4>
+              </div>
+              <span class="font-mono text-sm text-[#0E2757]">#F7FAFD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ── IMAGERY ─────────────────────────────────────────────── -->
+      <section class="px-8 py-20 bg-surface" id="imagery">
+        <div class="max-w-5xl mx-auto">
+          <div class="flex flex-col gap-16">
+            <div class="max-w-3xl">
+              <h2 class="font-ubuntu font-normal text-5xl text-primary mb-2">Imagery Guidelines</h2>
+              <p class="font-marlet text-2xl text-[#00475D] mb-6">The visual philosophy of the operational standard.</p>
+              <div class="h-1 w-20 bg-secondary-container mb-8"></div>
+              <p class="font-myriad text-lg text-on-surface leading-loose mb-8">
+                Our visual language is <strong class="text-primary">"The Operational Standard"</strong> — precision, purpose, quiet authority. We avoid aspirational or decorative imagery. What we show: real environments, active professionals, and the visible evidence of expertise at work.
+              </p>
+              <div class="space-y-8">
+                <div>
+                  <h4 class="font-ubuntu font-medium text-base text-primary mb-2">Core Visual Focus</h4>
+                  <p class="font-myriad text-base text-on-surface-variant leading-relaxed">Photography captures professionals in clinical and operational settings: consultation rooms, training sessions, collaborative work, organised space. The mood is grounded, expert, and forward-moving.</p>
+                </div>
+                <div>
+                  <h4 class="font-ubuntu font-medium text-base text-primary mb-2">Technical Execution</h4>
+                  <p class="font-myriad text-base text-on-surface-variant leading-relaxed">Controlled natural light or clean artificial lighting. No dramatic contrast or lifestyle warmth. Compositions feel observed, not staged. Shallow depth of field isolates the professional subject within a legible environment.</p>
+                </div>
+                <div>
+                  <h4 class="font-ubuntu font-medium text-base text-primary mb-2">What to Avoid</h4>
+                  <p class="font-myriad text-base text-on-surface-variant leading-relaxed">Stock imagery with visible stock aesthetics. Clinical care imagery that positions Medi360 as a healthcare provider. Lifestyle or aspirational photography without a clear professional context.</p>
+                </div>
+              </div>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <span class="chip">Real Environments</span>
+                <span class="chip">Active Professionals</span>
+                <span class="chip">Natural Light</span>
+                <span class="chip">Operational Register</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ── PRINCIPLES ─────────────────────────────────────────── -->
+      <section class="px-8 py-20 bg-surface-low" id="principles">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="font-ubuntu font-normal text-5xl text-primary mb-2">Design Principles</h2>
+          <p class="font-marlet text-2xl text-[#00475D] mb-16">The rules that hold the system together.</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-surface rounded-2xl p-8">
+              <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+                <span class="font-ubuntu font-medium text-xs text-primary">01</span>
+              </div>
+              <h4 class="font-ubuntu font-medium text-lg text-primary mb-3">The No-Line Rule</h4>
+              <p class="font-myriad text-sm text-on-surface-variant leading-relaxed">1px solid borders for sectioning are prohibited. Content boundaries are defined through background colour shifts only. A card on a section background creates its own edge through tonal contrast, not a drawn line.</p>
+            </div>
+            <div class="bg-surface rounded-2xl p-8">
+              <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+                <span class="font-ubuntu font-medium text-xs text-primary">02</span>
+              </div>
+              <h4 class="font-ubuntu font-medium text-lg text-primary mb-3">Tonal Layering</h4>
+              <p class="font-myriad text-sm text-on-surface-variant leading-relaxed">Depth is architectural, not decorative. Stack containers: white on surface-low, surface-low on surface-high. The shift in surface tier creates hierarchy. Heavy drop shadows are never used.</p>
+            </div>
+            <div class="bg-surface rounded-2xl p-8">
+              <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+                <span class="font-ubuntu font-medium text-xs text-primary">03</span>
+              </div>
+              <h4 class="font-ubuntu font-medium text-lg text-primary mb-3">Intentional Asymmetry</h4>
+              <p class="font-myriad text-sm text-on-surface-variant leading-relaxed">Break rigid grids with offset typography and overlapping elements. A headline that bleeds into the left margin reads as editorial authority, not disorder. Dynamic layouts suggest a forward-thinking consultancy.</p>
+            </div>
+            <div class="bg-surface rounded-2xl p-8">
+              <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+                <span class="font-ubuntu font-medium text-xs text-primary">04</span>
+              </div>
+              <h4 class="font-ubuntu font-medium text-lg text-primary mb-3">The Neon Green Laser</h4>
+              <p class="font-myriad text-sm text-on-surface-variant leading-relaxed">Active Pulse (#C0F968) is used sparingly as a direction signal, not a background. It points the user's eye toward a single conversion action per screen. When overused, it loses all power.</p>
+            </div>
+          </div>
+
+          <!-- Do / Don't -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <p class="font-ubuntu font-medium text-xs tracking-[0.2em] text-secondary uppercase mb-4">Do</p>
+              <div class="space-y-3">
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Use <strong>#C0F968</strong> sparingly as a focal point toward conversion actions</p>
+                </div>
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Allow asymmetrical margins. Let headlines read as editorial signatures</p>
+                </div>
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Use <strong>surface-bright</strong> (#F7FAFD) for primary content areas</p>
+                </div>
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Left-align all long-form body text</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="font-ubuntu font-medium text-xs tracking-[0.2em] text-[#ba1a1a] uppercase mb-4">Don't</p>
+              <div class="space-y-3">
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Use pure black for text. Use <strong>#181C1E</strong> to maintain the tonal range</p>
+                </div>
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Use standard box shadows. If it looks like a lifted card, it is too heavy</p>
+                </div>
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Use dividers between list items. Increase spacing or shift surface tier instead</p>
+                </div>
+                <div class="do-dont-item bg-surface">
+                  <p class="font-myriad text-sm text-on-surface leading-relaxed">Centre-align long-form body copy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ── COMPONENTS ─────────────────────────────────────────── -->
+      <section class="px-8 py-20 bg-surface" id="components">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="font-ubuntu font-normal text-5xl text-primary mb-2">System Components</h2>
+          <p class="font-marlet text-2xl text-[#00475D] mb-16">Modular building blocks for consistent application.</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Buttons -->
+            <div>
+              <p class="font-ubuntu font-medium text-xs tracking-widest text-primary uppercase mb-6">Buttons</p>
+              <div class="space-y-4">
+                <button class="w-full bg-primary text-white py-3 rounded-lg font-ubuntu font-medium text-sm hover:opacity-90 transition-all">
+                  Primary Action
+                </button>
+                <button class="w-full bg-secondary-container text-primary py-3 rounded-lg font-ubuntu font-medium text-sm hover:opacity-90 transition-all">
+                  High Contrast
+                </button>
+                <button class="w-full text-primary py-3 font-ubuntu font-medium text-sm border-b-2 border-primary/10 hover:border-secondary-container transition-all">
+                  Tertiary Label
+                </button>
+              </div>
+            </div>
+
+            <!-- Expertise Card -->
+            <div>
+              <p class="font-ubuntu font-medium text-xs tracking-widest text-primary uppercase mb-6">Expertise Card</p>
+              <div class="bg-surface-low p-6 rounded-xl">
+                <div class="flex items-center gap-4 mb-5">
+                  <div class="w-11 h-11 rounded-full bg-surface-high flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-on-surface-variant">person</span>
+                  </div>
+                  <div>
+                    <h5 class="font-myriad font-bold text-base text-on-surface">Dr. Elena Vance</h5>
+                    <p class="font-ubuntu text-xs font-medium text-primary tracking-tight">Clinical Lead</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-surface-high font-ubuntu text-xs text-on-surface">Diagnostics</span>
+                  <span class="px-3 py-1 rounded-full bg-surface-high font-ubuntu text-xs text-on-surface">Systems</span>
+                  <span class="px-3 py-1 rounded-full font-ubuntu text-xs font-medium text-primary" style="background:rgba(192,249,104,0.3)">Expert</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inputs -->
+            <div>
+              <p class="font-ubuntu font-medium text-xs tracking-widest text-primary uppercase mb-6">Input Fields</p>
+              <div class="space-y-5">
+                <div>
+                  <label class="font-ubuntu font-medium text-xs tracking-widest text-on-surface opacity-50 block mb-1 ml-1">Search Database</label>
+                  <div class="relative">
+                    <input class="w-full bg-surface-low rounded-lg px-4 py-3 text-sm font-myriad text-on-surface outline-none peer" placeholder="Candidate search..." type="text" style="border: none;"/>
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary-container transition-all duration-300 peer-focus:w-full"></div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input class="rounded text-primary focus:ring-secondary-container" type="checkbox" id="check1"/>
+                  <label class="font-myriad text-sm text-on-surface" for="check1">Accept architecture guidelines</label>
+                </div>
+              </div>
+
+              <!-- Chips -->
+              <div class="mt-8">
+                <p class="font-ubuntu font-medium text-xs tracking-widest text-primary uppercase mb-4">Expertise Chips</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="chip">Recruitment</span>
+                  <span class="chip">Strategy</span>
+                  <span class="chip">Training</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FOOTER ─────────────────────────────────────────────── -->
+      <footer class="px-12 py-10 bg-surface-low flex flex-col md:flex-row justify-between items-center gap-4" style="border-top: 1px solid rgba(229,232,235,0.6)">
+        <div class="font-ubuntu font-medium text-sm text-primary">Medi360 Brand System</div>
+        <div class="flex gap-8">
+          <span class="font-myriad text-xs text-on-surface-variant opacity-50 tracking-widest">Version 1.0</span>
+          <span class="font-myriad text-xs text-on-surface-variant opacity-50 tracking-widest">2026</span>
+        </div>
+        <div class="font-myriad text-xs text-on-surface-variant opacity-40 tracking-widest">
+          © 2026 Medi360. All rights reserved.
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Mobile bottom nav -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 bg-surface-low flex justify-around items-center py-3 z-50" style="border-top: 1px solid rgba(229,232,235,0.6)">
+    <a class="flex flex-col items-center gap-0.5 text-primary" href="#identity">
+      <span class="material-symbols-outlined text-xl">fingerprint</span>
+      <span class="font-ubuntu text-xs">Identity</span>
+    </a>
+    <a class="flex flex-col items-center gap-0.5 text-on-surface-variant" href="#downloads">
+      <span class="material-symbols-outlined text-xl">download</span>
+      <span class="font-ubuntu text-xs">Assets</span>
+    </a>
+    <a class="flex flex-col items-center gap-0.5 text-on-surface-variant" href="#colors">
+      <span class="material-symbols-outlined text-xl">palette</span>
+      <span class="font-ubuntu text-xs">Color</span>
+    </a>
+    <a class="flex flex-col items-center gap-0.5 text-on-surface-variant" href="#components">
+      <span class="material-symbols-outlined text-xl">category</span>
+      <span class="font-ubuntu text-xs">Components</span>
+    </a>
+  </div>
+
+</div>
+
+<script>
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + entry.target.id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
