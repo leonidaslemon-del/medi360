@@ -5,71 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medi360 - Logo Assets</title>
     <style>
-        body { font-family: "Calibri", sans-serif; text-align: center; padding: 40px; background-color: #fcfcfc; color: #333; }
-        .container { max-width: 1000px; margin: auto; }
-        .main-logo { max-width: 280px; margin-bottom: 30px; }
-        .asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
-        .asset-card { background: white; border: 1px solid #eee; padding: 25px; border-radius: 12px; }
-        .asset-card img { height: 80px; max-width: 100%; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto; }
-        .asset-name { font-weight: bold; font-size: 14px; margin-bottom: 15px; display: block; height: 40px; }
-        .btn-download { display: inline-block; padding: 10px 25px; background: #007bff; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
-        .btn-dark { background: #003366; }
+        body { font-family: "Calibri", "Candara", sans-serif; text-align: center; padding: 40px; background-color: #f5f5f5; color: #333; }
+        .container { max-width: 1100px; margin: auto; }
+        .main-logo { max-width: 250px; margin-bottom: 20px; }
+        h2 { margin-top: 50px; border-bottom: 2px solid #ddd; padding-bottom: 10px; text-align: left; }
+        
+        .asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        .asset-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        
+        /* Background Colors per Category */
+        .bg-white { background-color: #ffffff; }
+        .bg-black { background-color: #000000; color: white; }
+        .bg-blue  { background-color: #004AAD; color: white; } /* Medi360 Blue */
+
+        .preview { height: 150px; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .preview img { max-width: 100%; max-height: 100%; }
+        
+        .info { padding: 20px; text-align: center; }
+        .file-name { font-size: 13px; font-weight: bold; display: block; margin-bottom: 15px; min-height: 40px; }
+        
+        .btn-download { 
+            display: inline-block; padding: 10px 20px; background: #28a745; color: white; 
+            text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; 
+        }
+        .btn-download:hover { background: #218838; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" class="main-logo">
-        <p>This is a dedicated page to download <strong>Medi360 logo assets</strong>.</p>
+<div class="container">
+    <img src="01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" class="main-logo">
+    <p>This is a dedicated page to download <strong>Medi360 logo assets</strong>.</p>
 
-        <div class="asset-grid">
-            <!-- 1. Primary Vertical -->
-            <div class="asset-card">
-                <img src="01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg">
-                <span class="asset-name">01_Medi360 Logo Primary Vertical Stack</span>
+    <!-- CATEGORY 01 - WHITE BACKGROUND -->
+    <h2>01 Assets (White Background)</h2>
+    <div class="asset-grid">
+        <div class="asset-card">
+            <div class="preview bg-white"><img src="01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg"></div>
+            <div class="info">
+                <span class="file-name">01_Medi360 Logo Primary Vertical Stack</span>
                 <a href="01_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" class="btn-download" download>Download SVG</a>
             </div>
-
-            <!-- 2. Primary Horizontal -->
-            <div class="asset-card">
-                <img src="02_Medi360%20Logo%20Primary%20Horizontal.svg">
-                <span class="asset-name">02_Medi360 Logo Primary Horizontal</span>
-                <a href="02_Medi360%20Logo%20Primary%20Horizontal.svg" class="btn-download" download>Download SVG</a>
-            </div>
-
-            <!-- 3. Logo Icon -->
-            <div class="asset-card">
-                <img src="03_Medi360%20Logo%20Icon.svg">
-                <span class="asset-name">03_Medi360 Logo Icon</span>
-                <a href="03_Medi360%20Logo%20Icon.svg" class="btn-download" download>Download SVG</a>
-            </div>
-
-            <!-- 4. White Vertical -->
-            <div class="asset-card" style="background-color: #333; color: white;">
-                <img src="04_Medi360%20Logo%20White%20Vertical%20Stack.svg">
-                <span class="asset-name">04_Medi360 Logo White Vertical Stack</span>
-                <a href="04_Medi360%20Logo%20White%20Vertical%20Stack.svg" class="btn-download" download>Download SVG</a>
-            </div>
-
-            <!-- 5. White Horizontal -->
-            <div class="asset-card" style="background-color: #333; color: white;">
-                <img src="05_Medi360%20Logo%20White%20Horizontal.svg">
-                <span class="asset-name">05_Medi360 Logo White Horizontal</span>
-                <a href="05_Medi360%20Logo%20White%20Horizontal.svg" class="btn-download" download>Download SVG</a>
-            </div>
-
-            <!-- 6. White Icon -->
-            <div class="asset-card" style="background-color: #333; color: white;">
-                <img src="06_Medi360%20Logo%20White%20Icon.svg">
-                <span class="asset-name">06_Medi360 Logo White Icon</span>
-                <a href="06_Medi360%20Logo%20White%20Icon.svg" class="btn-download" download>Download SVG</a>
+        </div>
+        <div class="asset-card">
+            <div class="preview bg-white"><img src="01_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg"></div>
+            <div class="info">
+                <span class="file-name">01_Medi360 Logo Secondary Horizontal Stack</span>
+                <a href="01_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" class="btn-download" download>Download SVG</a>
             </div>
         </div>
-
-        <footer style="margin-top: 50px; opacity: 0.6;">
-            <p>&copy; 2024 Medi360</p>
-        </footer>
+        <div class="asset-card">
+            <div class="preview bg-white"><img src="01_Medi360%20Logo%20ZNo%20Mark.svg"></div>
+            <div class="info">
+                <span class="file-name">01_Medi360 Logo ZNo Mark</span>
+                <a href="01_Medi360%20Logo%20ZNo%20Mark.svg" class="btn-download" download>Download SVG</a>
+            </div>
+        </div>
     </div>
+
+    <!-- CATEGORY 02 - BLACK BACKGROUND -->
+    <h2>02 Assets (Black Background)</h2>
+    <div class="asset-grid">
+        <div class="asset-card">
+            <div class="preview bg-black"><img src="02_Medi360%20Logo%20Primary%20Vertical%20Stack.svg"></div>
+            <div class="info">
+                <span class="file-name">02_Medi360 Logo Primary Vertical Stack</span>
+                <a href="02_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" class="btn-download" download>Download SVG</a>
+            </div>
+        </div>
+        <div class="asset-card">
+            <div class="preview bg-black"><img src="02_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg"></div>
+            <div class="info">
+                <span class="file-name">02_Medi360 Logo Secondary Horizontal Stack</span>
+                <a href="02_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" class="btn-download" download>Download SVG</a>
+            </div>
+        </div>
+        <div class="asset-card">
+            <div class="preview bg-black"><img src="02_Medi360%20Logo%20ZNo%20Mark.svg"></div>
+            <div class="info">
+                <span class="file-name">02_Medi360 Logo ZNo Mark</span>
+                <a href="02_Medi360%20Logo%20ZNo%20Mark.svg" class="btn-download" download>Download SVG</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORY 03 - BLUE BACKGROUND -->
+    <h2>03 Assets (Blue Background)</h2>
+    <div class="asset-grid">
+        <div class="asset-card">
+            <div class="preview bg-blue"><img src="03_Medi360%20Logo%20Primary%20Vertical%20Stack.svg"></div>
+            <div class="info">
+                <span class="file-name">03_Medi360 Logo Primary Vertical Stack</span>
+                <a href="03_Medi360%20Logo%20Primary%20Vertical%20Stack.svg" class="btn-download" download>Download SVG</a>
+            </div>
+        </div>
+        <div class="asset-card">
+            <div class="preview bg-blue"><img src="03_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg"></div>
+            <div class="info">
+                <span class="file-name">03_Medi360 Logo Secondary Horizontal Stack</span>
+                <a href="03_Medi360%20Logo%20Secondary%20Horizontal%20Stack.svg" class="btn-download" download>Download SVG</a>
+            </div>
+        </div>
+        <div class="asset-card">
+            <div class="preview bg-blue"><img src="03_Medi360%20Logo%20ZNo%20Mark.svg"></div>
+            <div class="info">
+                <span class="file-name">03_Medi360 Logo ZNo Mark</span>
+                <a href="03_Medi360%20Logo%20ZNo%20Mark.svg" class="btn-download" download>Download SVG</a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px; padding: 20px; font-size: 12px; color: #888;">
+        &copy; 2026 Medi360 Asset Management
+    </footer>
+</div>
 
 </body>
 </html>
